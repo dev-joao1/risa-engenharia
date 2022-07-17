@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contato, Risa Engenharia">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="stylesheet" href="/css/animações.css">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="container">
+        <section class="background animate fadeDown">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+            </div>
+        </section>
+        <header>
+            <nav>
+                <ul class='menu-icons animate fadeDown'>
+                    <li><a href="../pages/contato.html" aria-label="Enviar um email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://wa.me/11949207713?text=Olá, Gostaria de Agendar um horario!" target="_blank" aria-label="Enviar uma mensagem via Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/engenhariarisa/?hl=bn" target="_blank" aria-label="Visitar o Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="content">
+                <div class="contact">
+                    <div class="contactInfo animate zoomIn">
+                        <picture>
+                            <span><img class="img-contato animate fadeLeft" src="../img/RISA.png" alt="Contato Risa Engenharia" width="100%" height="100%"></span>
+                        </picture>
+                    </div>
+                    <div class="contactForm animate fadeRight">
+                        <h2>Envie-nos uma mensagem</h2>
+                        <form class="contactContent" action="" method="post">
+                            <div class="formBox">
+                                <div class="inputBox w50">
+                                    <input type="text" id="nome" name="name" required>
+                                    <label for="name">Nome</label>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="tel" id="phone" name="tel" required  maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}">
+                                    <label for="tel">Telefone</label>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="text" id="subject" name="subject" required list="sugestaoContato">
+                                    <label for="assunto">Assunto</label>
+                                    <datalist id="sugestaoContato">
+                                        <option value="Adequações">Adequações</option>
+                                        <option value="Consultoria">Consultoria</option>
+                                        <option value="Documentações">Documentações</option>
+                                        <option value="Treinamento">Treinamento</option>
+                                        <option value="Outros">Outros</option>
+                                    </datalist>
+                                </div>
+                                <div class="inputBox w100">
+                                    <textarea id="message" name="message" required></textarea>
+                                    <label for="mensagem">Mensagem</label>
+                                </div>
+                                <div class="inputBox btn btn-voltar">
+                                    <input onclick="retornar()" type="button" value="Voltar">
+                                </div>
+                                <div class="inputBox btn btn-enviar">
+                                    <input type="submit" value="Enviar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="/js/script.js"></script>
+<!-- <script src="../js/app.js"></script> -->
+</body>
+</html>

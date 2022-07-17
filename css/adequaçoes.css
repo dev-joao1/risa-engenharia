@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0C192C;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Menu */
+
+.menu-icons {
+    justify-content: flex-end;
+    position: relative;
+    left: -5rem;
+}
+
+nav a {
+    display: inline-block;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 0.3125rem;
+}
+
+nav ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.875em;
+    color: #87CCEB;
+    transition: 0.5s;
+}
+
+nav a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s cubic-bezier(.95,.32,.37,1.31);
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li a:hover:before {
+    transform: scale(1);
+}
+
+ul li:nth-child(1) a:hover:before {
+    background: #DB4A39;
+}
+
+ul li:nth-child(2) a:hover:before {
+    background: #34AF23;
+}
+
+ul li:nth-child(3) a:hover:before {
+    background: #E4405F;
+}
+
+/* Fim do Menu */
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.25rem;
+    margin-top: 1.875rem;
+}
+
+.card-content {
+    display: flex;
+    width: 56.25rem;
+    height: auto;
+    border-radius: 0.25rem;
+    background: rgba(0,0,0, 0.10);
+    box-shadow: box-shadow: 0 3.125rem 3.125rem rgba(0,0,0,0.25);
+    transition:all 0.3s ease;
+}
+
+.card-header {
+    border-right: 0.0625rem solid #DDD;
+}
+
+.description {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card-header {
+    padding: 1.25rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    padding: 1.25rem;
+    margin: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.card-header img {
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0 0.25 rgba(0, 0, 0, 0.2);
+    margin: 1.25rem 1.875rem;
+    transition: .2s;
+}
+
+.card-header h2 {
+    color: #005d91;
+}
+
+.card-content:hover {
+    transform: scale(1.04);
+}
+
+/* Background */
+
+.background {
+    display: flex;
+    justify-content: center;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: -100;
+}
+
+.bubbles span {
+    position: relative;
+    width: 1.875rem;
+    height: 1.875rem;
+    background: #4FC3DC;
+    margin: 0 0.25rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.625rem #4fc3dc44,
+    0 0 3.125rem #4FC3DC,
+    0 0 6.25rem #4FC3DC;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #FF2D75;
+    box-shadow: 0 0 0 0.625rem #FF2D7544,
+    0 0 3.125rem #FF2D75,
+    0 0 6.25rem #FF2D75;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(98vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    .card-header img {
+        width: 13.75rem;
+        height: 21.25rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+        margin-top: 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 761px), (max-width: 800px){
+    .container {
+        overflow: hidden;
+    }
+
+    .card-header img {
+        width: 12.5rem;
+        height: 18.75rem;
+    }
+
+    .description-content {
+        gap: 0.875rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .card-content {
+        display: block;
+        width: 28.125rem;
+    }
+
+    .card-header {
+        padding: 1.25rem 1.25rem 0.3125rem 1.25rem;
+        border: none;
+    }
+    .description{
+        font-size: 1.125em;
+        display: flex;
+        justify-content: center;
+        padding: 0.3125rem 1.25rem 1.25rem 1.25rem;
+        background: transparent;
+    }
+
+    .description-content {
+        gap: 0.5rem;
+    }
+
+    .card-header img {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+
+    .menu-icons {
+        justify-content: center;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+    }
+
+    .container {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .content {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 437px) {
+    .description{
+        font-size: 0.875em;
+    }
+}
+
+@media only screen and (max-width: 371px) {
+    .card-header img {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+    .description{
+        font-size: 0.8125em;
+    }
+}
+
+@media only screen and (max-width: 328px) {
+    .card-header img {
+        width: 9.375rem;
+        height: 8.75rem;
+    }
+    .description{
+        font-size: 0.875em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .card-header img {
+        width: 5.625rem;
+        height: 5rem;
+    }
+    .description{
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 259px) {
+    .card-header img {
+        width: 5rem;
+        height: 5rem;
+    }
+    .description{
+        font-size: 0.6875em;
+    }
+}
+
+@media only screen and (max-width: 245px) {
+    .card-header img {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+    .description{
+        font-size: 0.625em;
+    }
+}

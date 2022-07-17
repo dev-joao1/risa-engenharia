@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* FadeUp */
+
+.card-content {
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;                                                       /* Animação da Consultoria */
+    animation-delay: 1.4s;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeUp {
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+}
+
+@keyframes fadeUp {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Fim FadeUp */
+
+/* fadeRight */
+
+.description {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;                                                /* Animação da Consultoria */
+    animation-delay: 3s;
+}
+
+.contactForm {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;                                                /* Animação do Contato */
+    animation-delay: 3s;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeRight {
+    -webkit-animation-name: fadeRight;
+    animation-name: fadeRight;
+}
+
+@keyframes fadeRight {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeRight {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Fim fadeRight */
+
+/* fadeDown */
+
+.menu-icons, .menu {
+    -webkit-animation-delay: 3.8s;
+    -moz-animation-delay: 3.8s;                                               /* Animação do Index e de todas as paginas */
+    animation-delay: 3.8s;
+}
+
+.background {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;                                                 /* Animação do Index e de todas as paginas */
+    animation-delay: 1s;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeDown {
+    -webkit-animation-name: fadeDown;
+    animation-name: fadeDown;
+}
+
+@keyframes fadeDown {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeDown {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Fim fadeDown */
+
+/* fadeLeft */
+
+.botoes {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;                                          /* Animação do Index */
+    animation-delay: 3s;
+}
+
+.card-header {
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;                                        /* Animação da Consultoria */
+    animation-delay: 2.7s;
+}
+
+.img-contato {
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;                                        /* Animação do Contato */
+    animation-delay: 2.7s;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeLeft {
+    -webkit-animation-name: fadeLeft;
+    animation-name: fadeLeft;
+}
+
+@keyframes fadeLeft {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeLeft {
+    from { 
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Fim fadeLeft */
+
+/* ZoomIn */
+
+.tela-inicial {
+    -webkit-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;                                                       /* Animação do Index */
+    animation-delay: 1.4s;
+}
+
+.content {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;                                                       /* Animação da Adequações */
+    animation-delay: 2s;
+}
+
+.contactInfo {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;                                                       /* Animação do Contato */
+    animation-delay: 2s;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+@keyframes zoomIn {
+    from { 
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes zoomIn {
+    from { 
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0,3);
+
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* ZoomIn */
